@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.w3.org/1999/xhtml" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{fragments/main_layout}">
+<head>
+    <title>WifiAnalyzer Home</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <div class="jumbotron">
+        <h1>Navbar example</h1>
+        <p>This example is a quick exercise to illustrate how the default, static navbar and fixed to top navbar work.
+            It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
+        <p>
+            <a class="btn btn-lg btn-primary" href="/status" role="button">View navbar docs &raquo;</a>
+        </p>
+    </div>
+    <p>Welcome to <span th:text="${appName}" /></p>
+
+    <p>Current DateTime is <span th:onload="${dateTime()}"/></p>
+</div>
+
+</body>
+</html>
